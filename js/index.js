@@ -22,3 +22,10 @@ function createSlider() {
 }
 
 document.addEventListener("DOMContentLoaded", createSlider);
+
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("open");
+}
+
+document.getElementById("menuButton").addEventListener("click", toggleMenu);
