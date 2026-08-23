@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <script src="js/index.js" type="module" defer async></script>
+    <title>Touch Slider</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/index.js"></script>
   </head>
   <body>
     <h1>GIT TRAINING</h1>
@@ -15,10 +19,73 @@
       <button type="submit">Submit</button>
       <button style="color: yellow">Take your bonass</button>
     </form>
-    <div id="container" class="container slider">
-      <div class="slide">Slide 1</div>
-      <div class="slide">Slide 2</div>
-      <div class="slide">Slide 3</div>
-    </div> 
+    <div class="slider" id="slider">
+      <div class="slider__track" id="track">
+        <div class="slider__slide">
+          <img
+            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=80"
+            alt="Mountain landscape"
+            draggable="false"
+          />
+        </div>
+        <div class="slider__slide">
+          <img
+            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1400&q=80"
+            alt="Forest sunlight"
+            draggable="false"
+            loading="lazy"
+          />
+        </div>
+        <div class="slider__slide">
+          <img
+            src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1400&q=80"
+            alt="Foggy mountains"
+            draggable="false"
+            loading="lazy"
+          />
+        </div>
+        <div class="slider__slide">
+          <img
+            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1400&q=80"
+            alt="Lake and mountains"
+            draggable="false"
+            loading="lazy"
+          />
+        </div>
+        <div class="slider__slide">
+          <img
+            src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=1400&q=80"
+            alt="Forest path"
+            draggable="false"
+            loading="lazy"
+          />
+        </div>
+        <div class="slider__slide">
+          <img
+            src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1400&q=80"
+            alt="Mountain lake"
+            draggable="false"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <button
+        class="slider__btn slider__btn--prev"
+        id="prevBtn"
+        aria-label="Previous"
+      >
+        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+      </button>
+      <button
+        class="slider__btn slider__btn--next"
+        id="nextBtn"
+        aria-label="Next"
+      >
+        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+      </button>
+
+      <div class="slider__dots" id="dots"></div>
+    </div>
   </body>
 </html>
